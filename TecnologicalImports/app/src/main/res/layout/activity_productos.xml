@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".productos">
+
+    <Button
+        android:id="@+id/btn_Productos2"
+        android:layout_width="97dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:onClick="Productos"
+        android:text="Productos"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_contactenos"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="91dp" />
+
+    <Button
+        android:id="@+id/btn_informacion"
+        android:layout_width="111dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/Botoninformacion"
+        android:onClick="Informacion"
+        android:text="Informacion"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="91dp" />
+
+    <Button
+        android:id="@+id/btn_registrarse"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="28dp"
+        android:hint="@string/Botonlogin"
+        android:onClick="Login"
+        android:text="@string/Botonlogin"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_contactenos"
+        android:layout_width="113dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="Contactenos"
+        android:text="@string/Botoncontactenos"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_informacion"
+        tools:layout_editor_absoluteY="91dp" />
+
+    <ScrollView
+        android:layout_width="384dp"
+        android:layout_height="426dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="128dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/camaracanon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="120dp"
+                android:layout_height="115dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/audifonosbeats"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_Productos2" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="159dp"
+                android:layout_height="200dp"
+                android:src="@drawable/parlantesbluetooth" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:src="@drawable/usbguitarra" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="130dp"
+                android:layout_height="160dp"
+                android:src="@drawable/cargadorportatilMi" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="150dp"
+                android:layout_height="129dp"
+                android:src="@drawable/proyector" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="154dp"
+                android:layout_height="177dp"
+                android:src="@drawable/powerbank" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="159dp"
+                android:layout_height="181dp"
+                android:src="@drawable/camdeportiva" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

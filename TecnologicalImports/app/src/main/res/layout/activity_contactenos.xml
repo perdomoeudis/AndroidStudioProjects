@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".contactenos">
+
+    <Button
+        android:id="@+id/btn_login2"
+        android:layout_width="128dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="44dp"
+        android:onClick="Login"
+        android:text="@string/Botonlogin"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_categorias2"
+        android:layout_width="98dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:onClick="Productos"
+        android:text="@string/Botonproductos"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_contactenos2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <Button
+        android:id="@+id/btn_informacion2"
+        android:layout_width="112dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="Informacion"
+        android:text="Informacion"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <Button
+        android:id="@+id/btn_contactenos2"
+        android:layout_width="114dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="Contactenos"
+        android:text="@string/Botoncontactenos"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_informacion2"
+        tools:layout_editor_absoluteY="104dp" />
+
+</android.support.constraint.ConstraintLayout>

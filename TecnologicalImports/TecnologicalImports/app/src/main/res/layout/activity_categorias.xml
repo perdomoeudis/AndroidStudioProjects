@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".categorias">
+
+    <Button
+        android:id="@+id/btn_categorias"
+        android:layout_width="97dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/Botoncategorias"
+        android:onClick="Categorias"
+        android:text="Categorias"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_contactenos"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <Button
+        android:id="@+id/btn_informacion"
+        android:layout_width="111dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/Botoninformacion"
+        android:onClick="Informacion"
+        android:text="Informacion"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <Button
+        android:id="@+id/btn_registrarse"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="28dp"
+        android:hint="@string/Botonlogin"
+        android:onClick="Login"
+        android:text="@string/Botonlogin"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_contactenos"
+        android:layout_width="113dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="40dp"
+        android:onClick="Contactenos"
+        android:text="@string/Botoncontactenos"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_informacion"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="137dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="152dp"
+        android:layout_height="149dp"
+        app:srcCompat="@drawable/parlantes bluetooth"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+</android.support.constraint.ConstraintLayout>

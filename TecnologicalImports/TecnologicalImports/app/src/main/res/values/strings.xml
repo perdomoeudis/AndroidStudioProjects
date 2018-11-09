@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TecnologicalImports</string>
+    <string name="Botoncategorias">Categorias</string>
+    <string name="Botoncontactenos">Contactenos</string>
+    <string name="Botoninformacion">Informacion</string>
+    <string name="Botonlogin">Login</string>
+    <string name="txt_mail">Correo Electronico</string>
+    <string name="txt_password">Contraseña</string>
+    <string name="boton">Ingresar</string>
+
+</resources>
