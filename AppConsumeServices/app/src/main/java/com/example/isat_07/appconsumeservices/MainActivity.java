@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void getData() {
-        String sql = "https://servicio120181113084925.azurewebsites.net/api/values";
+        String sql = "https://serviciomaria.azurewebsites.net/api/values";
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
@@ -52,33 +52,21 @@ public class MainActivity extends AppCompatActivity {
 
             StringBuffer response = new StringBuffer();
 
-            String json = "";
+            //String json = "";
 
             while ((inputLine = in.readLine()) != null) {
                 response.append(inputLine);
             }
 
-            json = response.toString();
+            String mensaje = response.toString();
 
-            JSONArray jsonArr = null;
-
-            jsonArr = new JSONArray(json);
-            String mensaje = "";
-            for (int i = 0; i < jsonArr.length(); i++) {
-                JSONObject jsonObject = jsonArr.getJSONObject(i);
-
-                Log.d("SLIDA", jsonObject.optString("description"));
-                mensaje += "DESCRIPCION " + i + " " + jsonObject.optString("description") + "\n";
-            }
+            Log.d("SALIDA",mensaje );
             sal.setText(mensaje);
         }
         catch (MalformedURLException e) {
             e.printStackTrace();
         }
         catch (IOException e) {
-            e.printStackTrace();
-        }
-        catch (JSONException e) {
             e.printStackTrace();
         }
     }
